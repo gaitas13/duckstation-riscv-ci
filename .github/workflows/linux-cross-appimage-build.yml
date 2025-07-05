@@ -10,9 +10,9 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        arch: ["arm64", "armhf"]
+        #arch: ["arm64", "armhf"]
         #arch: ["arm64", "armhf", "riscv64"]
-        #arch:  ["riscv64"]
+        arch:  ["riscv64"]
 
     runs-on: ubuntu-22.04
     container:
