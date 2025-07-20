@@ -94,6 +94,10 @@ elif [ "$CROSSARCH" == "armhf" ]; then
 	CROSSSYSARCH="armhf"
 	CROSSTRIPLET="arm-linux-gnueabihf"
 	CMAKEPROCESSOR="armv7-a"
+ elif [ "$CROSSARCH" == "riscv64" ]; then
+	CROSSSYSARCH="riscv64"
+	CROSSTRIPLET="riscv64-linux-gnu"
+	CMAKEPROCESSOR="riscv64"
 else
 	echo "Unknown cross arch $CROSSARCH"
 	exit 1
