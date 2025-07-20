@@ -15,8 +15,9 @@ jobs:
         arch:  ["riscv64"]
 
     runs-on: ubuntu-latest
-    #container:
+    container:
       #image: ghcr.io/duckstation/cross-build-${{ matrix.arch }}:latest
+      image: https://hub.docker.com/r/riscv64/ubuntu:latest
 
     timeout-minutes: 120
     steps:
